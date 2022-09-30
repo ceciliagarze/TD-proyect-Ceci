@@ -1,0 +1,130 @@
+Algoritmo What_album_should_you_listen_to
+	evermore=0
+	thisIsWhatItFeelsLike=0
+	ultraviolence=0
+	lifeSupport=0
+	theDivisionBell=0
+	whosNext=0
+	Escribir "This quiz will determine what album you should listen to."
+	Escribir "What is your favorite color?"
+	Escribir "1) Light blue"
+	Escribir "2) Whine red"
+	Escribir "3)Dark grey"
+	Escribir "4)Dark purple"
+	Escribir "5) Forest green"
+	Escribir "6) Beige"
+	Leer userAnswer
+	Segun userAnswer Hacer
+		1:
+			whosNext= whosNext+1
+		2:
+			theDivisionBell= theDivisionBell+1
+		3: 
+			lifeSupport= lifeSupport+1
+		4: 
+			ultraviolence= ultraviolence+1
+		5:
+			thisIsWhatItFeelsLike= thisIsWhatItFeelsLike+1
+		6:
+			evermore= evermore+1
+			
+		De Otro Modo:
+			Escribir "That is not a valid option."
+	FinSegun
+	Escribir "What is your mood right now?"
+	Escribir "1) Nostalgic"
+	Escribir "2) Confused"
+	Escribir "3) Grieving"
+	Escribir "4) Vengeful"
+	Escribir "5) Melancholic"
+	Escribir "6) Angsty"
+	Leer userAnswer
+	Segun userAnswer Hacer
+		1:
+			evermore= evermore+1
+		2:
+			thisIsWhatItFeelsLike= thisIsWhatItFeelsLike+1
+		3: 
+			ultraviolence= ultraviolence+1
+		4: 
+			lifeSupport= lifeSupport1
+		5:
+			theDivisionBell= theDivisionBell+1
+		6:
+			whosNext= whosNext+1
+			
+		De Otro Modo:
+			Escribir "That is not a valid option."
+	FinSegun  
+	Escribir "Pick a flower"
+
+	Escribir "1) Lilly of the valley"
+	Escribir "2) Angels breath"
+	Escribir "3) Hydrangeas"
+	Escribir "4) White roses"
+	Escribir "5)Ivy"
+	Escribir "6) Forget me not"
+	Leer userAnswer
+	Segun userAnswer Hacer
+		1:
+			evermore= evermore+1
+		2:
+			thisIsWhatItFeelsLike= thisIsWhatItFeelsLike+1
+		3: 
+			ultraviolence= ultraviolence+1
+		4: 
+			lifeSupport= lifeSupport1
+		5:
+			theDivisionBell= theDivisionBell+1
+		6:
+			whosNext= whosNext+1
+			
+		De Otro Modo:
+			Escribir "That is not a valid option."
+	FinSegun  
+	Escribir "What are you craving right now"
+
+	Escribir "1) Pumpking pie"
+	Escribir "2) Homemade mac and cheese"
+	Escribir "3) Cherry cola"
+	Escribir "4) Sushi"
+	Escribir "5) Sour candy"
+	Escribir "6) Beer"
+	Leer userAnswer
+	Segun userAnswer Hacer
+		1:
+			evermore= evermore+1
+		2:
+			thisIsWhatItFeelsLike= thisIsWhatItFeelsLike+1
+		3: 
+			ultraviolence= ultraviolence+1
+		4: 
+			lifeSupport= lifeSupport1
+		5:
+			theDivisionBell= theDivisionBell+1
+		6:
+			whosNext= whosNext+1
+			
+		De Otro Modo:
+			Escribir "That is not a valid option."
+	FinSegun  
+	
+	Si evermore > thisIsWhatItFeelsLike & evermore > ultraviolence & evermore > lifeSupport & evermore > theDivisionBell & evermore > whosNext Entonces
+		Escribir "Your album is: evermore by Taylor Swift"
+	Finsi
+	Si thisIsWhatItFeelsLike > evermore & thisIsWhatItFeelsLike > ultraviolence & thisIsWhatItFeelsLike > lifeSupport & thisIsWhatItFeelsLike > theDivisionBell & thisIsWhatItFeelsLike > whosNext Entonces
+		Escribir "Your album is This Is What It Feels Like by Gracie Abrams"
+	Finsi
+	Si ultraviolence > evermore & ultraviolence > thisIsWhatItFeelsLike & ultraviolence > lifeSupport & ultraviolence > theDivisionBell & ultraviolence > whosNext Entonces
+		Escribir "Your album is Ultraviolence by Lana Del Rey"
+	Finsi
+	Si lifeSupport > evermore & lifeSupport > thisIsWhatItFeelsLike & lifeSupport > ultraviolence & lifeSupport > theDivisionBell & lifeSupport > whosNext Entonces
+		Escribir "Your album is Life Support by Madison Beer"
+	Finsi
+	Si theDivisionBell > evermore & aliceInWonderland > thisIsWhatItFeelsLike & theDivisionBell > ultraviolence & theDivisionBell > lifeSupport & theDivisionBell > whosNext Entonces
+		Escribir "Your album is The Division Bell by Pink Floyd"
+	Finsi
+	Si whosNext > evermore & whosNext > thisIsWhatItFeelsLike & whosNext > ultraviolence & whosNext > lifeSupport & whosNext > theDivisionBell Entonces
+		Escribir "Your album is Whos Next by The Who"
+	Finsi
+FinAlgoritmo
